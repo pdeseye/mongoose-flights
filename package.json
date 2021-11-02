@@ -16,20 +16,5 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.0.12",
     "morgan": "^1.10.0"
-  },
-  "main": "server.js",
-  "bin": {
-    "destroy-e-gen": "bin/www.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SEI-Remote/e-gen-replacement.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SEI-Remote/e-gen-replacement/issues"
-  },
-  "homepage": "https://github.com/SEI-Remote/e-gen-replacement#readme",
-  "description": ""
+  }
 }
