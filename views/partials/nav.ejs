@@ -1,8 +1,17 @@
 </head>
 <body>
-<nav>
-  <ul>
-    <li><a href="/flights">View Flights</a></li>
-    <li><a href="/flights/new">Add a Flight</a></li>
-  </ul>
-</nav>
+  <nav>
+		<i class="fas fa-plane fa-2x"></i>  
+    <a 
+    href="/" <%- title === 'Home' ? 'class="active"' : '' %>
+    >Home</a>
+    <a 
+    href="/flights/new" <%- title === 'Add Flight' ? 'class="active"' : '' %>
+    >Add Flight</a>
+    <a 
+      href="/destinations/new" <%- title === 'Home' ? 'class="active"' : '' %>
+    >Add Destination</a>
+    <a 
+    href="/flights" <%- title === 'All Flights' ? 'class="active"' : '' %>
+    >All Flights</a>
+  </nav>

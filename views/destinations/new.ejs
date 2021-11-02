@@ -4,18 +4,21 @@
 
 <main>
 	<h1><%= title %></h1>
-  <p>Please first ensure that the destination is not in the dropdown
+  <!-- <%# if (error)  {%> 
+    <p>"Entry already added"</p>
+    <%# } %>  -->
+  <p>Please first ensure that the Destination is not in the dropdown</p>
     <select>
       <% destinations.forEach(function(destination) { %>
         <option><%= destination.airport %></option>
       <% }) %>
     </select>
-  </p>
   <form id="add-destination-form" action="/destinations" method="POST">
-    <label for="destination-input">Destination:</label>
-    <input type="text" name="airport" id="destination-input" required>
+    <label for="name-input">Destination:</label>
+    <input type="text" name="airport" id="name-input" placeholder="LAX">
     <button type="submit">Add Destination</button>
   </form>
 </main>
+
 
 <%- include('../partials/footer') %>

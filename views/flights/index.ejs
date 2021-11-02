@@ -1,39 +1,35 @@
 <%- include('../partials/html-head') %>
-<link rel='stylesheet' href='/stylesheets/style.css' />
-<%- include('../partials/nav') %>
+<link rel="stylesheet" href="/stylesheets/flights/index.css">
+<%- include('../partials/nav') %> 
 
 <main>
-  <h1>Flight List</h1>
+  <h1><%= title %> </h1>
   <table>
     <thead>
       <tr>
-        <th>Airline</th>
-        <th>Airport</th>
-        <th>Flight Number</th>
-        <th>Departs</th>
+        <th>Airline: </th>
+        <th>Airport: </th>
+        <th>Flight #: </th>
+        <th>Departure: </th>
       </tr>
     </thead>
-    <tbody>
-      <% flights.forEach(f => { %>
+    <tbody>      
+      <% flights.forEach(function(f) { %> 
         <tr>
           <td><%= f.airline %></td>
           <td><%= f.airport %></td>
-          <td><%= f.flightNo %></td>
-          <td><%= f.departs %></td>
-          <td>
-            <a href="/flights/<%= f._id %>">
-            DETAILS
-            </a>
-          </td>
+          <td><%= f.flightNo %></td>   
+          <td><%= f.departs %></td>        
+          <td><a href="/flights/<%= f._id %> ">Details</a></td>
           <td>
             <form action="/flights/<%= f._id %>?_method=DELETE" method="POST">
-            <button>DELETE</button>
+              <button id="trashFlight"><i class="fas fa-trash-alt"></i></button>
             </form>
           </td>
         </tr>
-      <% }) %>
+        <% }) %> 
     </tbody>
   </table>
 </main>
 
-<%- include('../partials/footer') %>
+<%- include('../partials/footer') %> 

@@ -1,0 +1,29 @@
+form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 35.2rem));
+  font-size: 2rem;
+}
+
+form * {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+form > button {
+  grid-column: span 1;
+  width: 16rem;
+  font-size: 1.7rem;
+}
+
+#addFlightBtn{
+  transition: all .2s ease-in-out;
+}
+
+
+#addFlightBtn:hover{
+  color: white;
+  background-color: #424748;
+  cursor: pointer;
+}
