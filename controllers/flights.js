@@ -1,5 +1,5 @@
-
 import { Flight } from '../models/flight.js'
+// import { Destination } from '../models.destination.js'
 
 function index(req, res) {
   Flight.find({}, function(error, flights) {
