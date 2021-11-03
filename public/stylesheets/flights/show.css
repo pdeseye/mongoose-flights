@@ -56,7 +56,7 @@ section div:nth-child(even) {
 }
 
 #trashTicket{
-  color: rgb(20, 41, 228);
+  color: rgb(228, 155, 20);
   background-color: transparent ;
   border: none;
   transition: all .2s ease-in-out;
